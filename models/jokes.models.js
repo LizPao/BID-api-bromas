@@ -11,7 +11,9 @@ const JokeSchema = new mongoose.Schema({
         required:[true, "Se necesita el valor"],
         minlength: [10, "Minimo 6 caracteres"]
     }
-});
+},
+{ timestamps: true}
+);
 
 const Jokes = mongoose.model("chistes", JokeSchema);//de mi db
 
