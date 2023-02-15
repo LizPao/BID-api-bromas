@@ -4,12 +4,12 @@ const JokeSchema = new mongoose.Schema({
     setup: {
         type: String,
         required:[true, "Se necesita el valor"],
-        minlength: [10, "Minimo 6 caracteres"]
+        minlength: [10, "Minimo 10 caracteres"]
     },
     punchline: {
         type: String,
         required:[true, "Se necesita el valor"],
-        minlength: [10, "Minimo 6 caracteres"]
+        minlength: [10, "Minimo 10 caracteres"]
     }
 },
 { timestamps: true}
